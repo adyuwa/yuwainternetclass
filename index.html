@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>老師上課影片</title>
+</head>
+<body>
+    <h1>網路規劃上課影片觀看網頁</h1>
+    <p>請選擇要觀看的影片：</p>
+
+    <button onclick="playVideo('1d28LG2x2BntTg6APhKPtd7eaYf8PaT76')">w1-1</button>
+    <button onclick="playVideo('17Z7RihPJ3t5_FZBFUbdFmi0fXZAl1PUs')">w1-2</button>
+    <button onclick="playVideo('15Pzt-i-DuzsCYL-h6glGV2O5iCygDIWO')">w2-1</button>
+    <button onclick="playVideo('1980N4TDDpsVRwYcVyFiFJH3mk6SD5q00')">w2-2</button>
+    <button onclick="playVideo('1ni5XjW0vT3QC7vbwJqadAzmKzslKAgI4')">w3-1</button>
+    <button onclick="playVideo('1SOCYESksgLI6xDbkM3xqbim7lEj_GmzR')">w3-2</button>
+    <button onclick="playVideo('1jY4_wd-ULAE3CGDrJHd8Tc3YKsSB5n5t')">w3-3</button>
+    <button onclick="playVideo('1S0vFzT-8ALOdeyOVqWxd0UzOzIzE4o5z')">w4-1</button>
+    <button onclick="playVideo('1I_7GNCa1R1JeBrNgoDsiqrOy9nSLzn7Y')">w4-2</button>
+    <button onclick="playVideo('1MgdG2YbwszYIMHdLccMJjKzTpNcQRFy3')">w5-1</button>
+    <button onclick="playVideo('1UD4lfhwK5-UUqr6JFDyAR_aOuMQh9YJt')">w5-2</button>
+    <!-- 添加其他影片的按鈕 -->
+
+    <div id="videoPlayer"></div>
+
+    <script>
+        function playVideo(videoId) {
+            var videoPlayer = document.getElementById('videoPlayer');
+            videoPlayer.innerHTML = `<iframe src="https://drive.google.com/file/d/${videoId}/preview" width="600" height="400" frameborder="0" allowfullscreen></iframe>`;
+        }
+    </script>
+</body>
+</html>
